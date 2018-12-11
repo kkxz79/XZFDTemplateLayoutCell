@@ -19,7 +19,6 @@ NSString * const kXZFeedCell  = @"XZFeedCell";
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Feed";
@@ -170,6 +169,7 @@ NSString * const kXZFeedCell  = @"XZFeedCell";
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.fd_debugLogEnabled = YES;
     }
     return _tableView;
 }
