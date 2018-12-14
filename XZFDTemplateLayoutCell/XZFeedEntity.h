@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface XZFeedEntity : NSObject
 -(instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
